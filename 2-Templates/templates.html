@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/template.css"/>
+</head>
+<body>
+<div id="wrapper"></div>
+
+<script id="template" type="text/x-handlebars-template">
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Job Title</th>
+        <th>Website</th>
+    </tr>
+    {{#this}}
+    <tr>
+        <td>{{name}}</td>
+        <td>{{jobTitle}}</td>
+        <td>{{website}}</td>
+    </tr>
+    {{/this}}
+</table>
+</script>
+
+<script src="scripts/libs/jquery-2.1.3.min.js"></script>
+<script src="scripts/libs/handlebars-v3.0.1.js"></script>
+<script src="scripts/templates.js"></script>
+</body>
+</html>
